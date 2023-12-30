@@ -1,0 +1,96 @@
+.spacer{
+    flex: 1 1 auto;
+}
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* You can adjust the height as needed */
+  }
+  /* Créez la div bleue */
+
+  /* Center the container horizontally and vertically */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Optional: Center vertically within the viewport */
+  }
+  
+  /* Style for the image (optional) */
+  img {
+    max-width: 40%; /* Ensure the image doesn't exceed its container */
+    max-height: 0%; /* Ensure the image doesn't exceed its container */
+    /* Add any other styles you want for the image */
+  }
+  /* Style for the container */
+.top-left-container {
+    position: absolute;
+    top:10%;
+    left: 5%;
+  }
+  
+ /* Style for the container */
+.left-container {
+    position: absolute;
+    top: 30%;
+    left: 40%; /* Adjust the left position as needed */
+
+    text-align: left;
+  }
+  
+  /* Style for the button (optional) */
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  /* Style for the title (optional) */
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Style for the subtitle (optional) */
+  p {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .custom-mat-raised-button {
+    background-color: rgb(23, 158, 64);
+    color: white;
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 4px; /* Add border-radius for a rounded shape */
+    transition: background-color 0.3s ease; /* Add a smooth transition */
+  }
+  
+  .custom-mat-raised-button:hover {
+    background-color: darken(rgb(23, 158, 64), 10%); /* Darken color on hover */
+  }
+  .custom-button {
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 4px; /* Add border-radius for a rounded shape */
+    transition: background-color 0.3s ease; /* Add a smooth transition */
+  }
+  
+  .custom-button:hover {
+    background-color: rgba(254, 253, 253, 0.1); /* Add a subtle background color on hover */
+  }
+  
+  .custom-button.mat-raised-button {
+    background-color: rgb(23, 158, 64);
+    color: white;
+  }
+  
+  .custom-button.mat-raised-button:hover {
+    background-color: darken(rgb(23, 158, 64), 10%); /* Darken color on hover */
+  }
+  

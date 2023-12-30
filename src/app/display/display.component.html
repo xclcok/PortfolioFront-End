@@ -1,0 +1,45 @@
+
+<div *ngIf="dataList" class="portfolio-container">
+    <button mat-button (click)="goBack()" class="back-button">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+    <div class="portfolio-header">
+        <h1>Portfolio</h1>
+      </div>
+    <div *ngIf="dataList.profile" class="profile-section">
+        <h2>Profile</h2>
+        <div class="profile-item">
+       
+        </div>
+        <div class="profile-item">
+          <label>Name:</label>
+          <p>{{ dataList.profile.name }}</p>
+        </div>
+        <div class="profile-item">
+          <label>Email:</label>
+          <p>{{ dataList.profile.email }}</p>
+        </div>
+        <div class="profile-item">
+          <label>Title:</label>
+          <p>{{ dataList.profile.title }}</p>
+        </div>
+      </div>
+   
+    <div class="portfolio-content">
+      <div class="portfolio-item">
+        <label>Competence:</label>
+        <p>{{ dataList.competence }}</p>
+      </div>
+      <div class="portfolio-item">
+        <label>Experience:</label>
+        <p>{{ dataList.experience }}</p>
+      </div>
+      <div class="portfolio-item">
+        <label>Project:</label>
+        <p>{{ dataList.project }}</p>
+      </div>
+    </div>
+  
+    
+  </div>
+  

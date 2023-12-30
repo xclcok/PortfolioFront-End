@@ -1,0 +1,62 @@
+<div *ngIf="isLoading; else content" class="center-div">
+    <mat-spinner></mat-spinner>
+  </div>
+  
+  <ng-template #content>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+    </head>
+    <body>
+      <mat-toolbar color="primary">
+        <mat-icon>description</mat-icon>E-Portifolio
+        <div class="spacer"></div>
+        <a mat-button  routerLink="/home"class="custom-button" style="color: white;">Home</a>
+        <a mat-button routerLink="/profiles"class="custom-button"style="color: white;">Profile</a>
+        <a mat-raised-button  routerLink="/login" style="   color:white; 
+        background-color: rgb(23, 158, 64); "class="custom-mat-raised-button">Créer un portfolio</a>
+      </mat-toolbar>
+      <div class="container d-flex justify-content-center align-items-center h-100">
+        <div class="border p-4">
+          <form [formGroup]="formportfolio" (ngSubmit)="onSubmit()" class="example-form">
+            <!-- <div class="form-group">
+              <label for="name">Competence</label>
+              <input
+              type="number"
+              class="form-control"
+              id="id"
+              name="id"
+              placeholder=""
+              formControlName="id_profile"
+              [value]="this.receivedId"
+              readonly/></div>
+         -->
+            <div class="form-group">
+              <label for="name">Competence</label>
+              <input type="text" class="form-control" id="competence" name="competence" placeholder="Competences"  formControlName="competence" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Experience</label>
+              <input type="text" class="form-control" id="experience"  name="experience" placeholder="Experience"  formControlName="experience" required>
+            </div>
+            <div class="form-group">
+              <label for="projet">Projet</label>
+              <input type="text" class="form-control" id="project"  name="project" placeholder="Projet"  formControlName="project" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Créer un Portfolio</button>
+          </form>
+        </div>
+      </div>
+      
+      
+    </body>
+    </html>
+    
+  </ng-template>
+  
+  

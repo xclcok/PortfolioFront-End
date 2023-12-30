@@ -1,0 +1,201 @@
+mat-card {
+    width: 1px; /* Set a fixed width for the card */
+    height: 150px; /* Set the same height as width to make it square */
+    margin: 20px 0 0 20px; /* Add margin: top right bottom left */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow effect */
+  }
+  .spacer{
+    flex: 1 1 auto;
+}
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* You can adjust the height as needed */
+  }
+  /* Créez la div bleue */
+
+  /* Center the container horizontally and vertically */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Optional: Center vertically within the viewport */
+  }
+  
+  /* Style for the image (optional) */
+  img {
+    max-width: 40%; /* Ensure the image doesn't exceed its container */
+    max-height: 0%; /* Ensure the image doesn't exceed its container */
+    /* Add any other styles you want for the image */
+  }
+  /* Style for the container */
+.top-left-container {
+    position: absolute;
+    top:10%;
+    left: 5%;
+  }
+  
+ /* Style for the container */
+.left-container {
+    position: absolute;
+    top: 30%;
+    left: 40%; /* Adjust the left position as needed */
+
+    text-align: left;
+  }
+  
+  /* Style for the button (optional) */
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    /* width: 10%; */
+    border-radius: 4px;
+  }
+  
+  /* Style for the title (optional) */
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Style for the subtitle (optional) */
+  p {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .custom-mat-raised-button {
+    background-color: rgb(23, 158, 64);
+    color: white;
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 4px; /* Add border-radius for a rounded shape */
+    transition: background-color 0.3s ease; /* Add a smooth transition */
+  }
+  
+  .custom-mat-raised-button:hover {
+    background-color: darken(rgb(23, 158, 64), 10%); /* Darken color on hover */
+  }
+  .custom-button {
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 4px; /* Add border-radius for a rounded shape */
+    transition: background-color 0.3s ease; /* Add a smooth transition */
+  }
+  
+  .custom-button:hover {
+    background-color: rgba(254, 253, 253, 0.1); /* Add a subtle background color on hover */
+  }
+  
+  .custom-button.mat-raised-button {
+    background-color: rgb(23, 158, 64);
+    color: white;
+  }
+  
+  .custom-button.mat-raised-button:hover {
+    background-color: darken(rgb(23, 158, 64), 10%); /* Darken color on hover */
+  }
+  /* profiles.component.css */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start; /* Align cards to the start of the container */
+  padding: 16px;
+}
+
+.profile-card {
+  flex: 1 1 calc(25% - 16px); /* Set each card to take up 25% of the container width with a gap of 16px */
+  max-width: calc(25% - 16px); /* Set a maximum width for each card */
+  /* Add any additional styling as needed */
+}
+
+@media (max-width: 992px) {
+  .profile-card {
+    flex: 1 1 calc(33.33% - 16px); /* Adjust for smaller screens */
+    max-width: calc(33.33% - 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex: 1 1 calc(50% - 16px); /* Adjust for even smaller screens */
+    max-width: calc(50% - 16px);
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-card {
+    flex: 1 1 calc(100% - 16px); /* On small screens, each card takes up 100% of the container width */
+    max-width: calc(100% - 16px);
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-card {
+    flex: 1 1 calc(100% - 16px); /* For even smaller screens, each card still takes up 100% of the container width */
+    max-width: calc(100% - 16px);
+  }
+}
+/* profiles.component.css */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center; /* Center cards within the container */
+  padding: 16px;
+}
+
+.profile-card {
+  flex: 1 1 calc(25% - 16px); /* Set each card to take up 25% of the container width with a gap of 16px */
+  max-width: calc(25% - 16px); /* Set a maximum width for each card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Maintain the shadow effect */
+  margin-bottom: 16px; /* Add margin at the bottom of each card for spacing */
+  /* Add any additional styling as needed */
+}
+
+@media (max-width: 992px) {
+  .profile-card {
+    flex: 1 1 calc(33.33% - 16px); /* Adjust for smaller screens */
+    max-width: calc(33.33% - 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex: 1 1 calc(50% - 16px); /* Adjust for even smaller screens */
+    max-width: calc(50% - 16px);
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-card {
+    flex: 1 1 calc(100% - 16px); /* On small screens, each card takes up 100% of the container width */
+    max-width: calc(100% - 16px);
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-card {
+    flex: 1 1 calc(100% - 16px); /* For even smaller screens, each card still takes up 100% of the container width */
+    max-width: calc(100% - 16px);
+  }
+}
+/* Add this style to your profiles.component.css */
+
+.portfolio-button {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+
+
+}
